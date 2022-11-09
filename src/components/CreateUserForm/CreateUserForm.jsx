@@ -56,7 +56,7 @@ const CreateUserForm = () => {
     setValidations((prevState) => {
       return {
         ...prevState,
-        password: passwordRef.current.current.value.length > 5,
+        password: passwordRef.current.current.value.trim().length > 5,
       }; // allowed length >= 6
     });
   };
@@ -65,7 +65,7 @@ const CreateUserForm = () => {
     setValidations((prevState) => {
       return {
         ...prevState,
-        fullName: fullNameRef.current.current.value.length > 1,
+        fullName: fullNameRef.current.current.value.trim().length > 1,
       }; // allowed length >= 2
     });
   };
