@@ -9,7 +9,7 @@ const ModalOverlay = ({ title, message, dismissModalHandler }) => {
   return (
     <div className={`${styles["card"]} ${styles["modal"]}`}>
       <header className={styles["header"]}>
-        <h2>{title}</h2>
+        <h2 className="text-2xl">{title}</h2>
       </header>
       <div className={`max-h-80 overflow-auto  ${styles["content"]}`}>
         <div>{message}</div>
